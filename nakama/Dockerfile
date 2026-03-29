@@ -4,5 +4,5 @@ COPY ./modules /nakama/data/modules
 
 CMD ["sh", "-c", "nakama \
   --name nakama1 \
-  --database.address postgres:BGGaWLqGytwmPwrhyFOQpgMhNIiQxjNa@containers-us-west-123.railway.app:5432/railway \
+  --database.address $PGUSER:$PGPASSWORD@$PGHOST:$PGPORT/$PGDATABASE \
   --socket.port $PORT"]
