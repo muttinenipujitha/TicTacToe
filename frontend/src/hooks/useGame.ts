@@ -8,6 +8,8 @@ export type GamePhase =
   | "playing"
   | "game_over";
 
+  
+
 export interface PlayerInfo {
   symbol: "X" | "O";
   username: string;
