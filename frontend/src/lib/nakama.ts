@@ -10,6 +10,7 @@ class NakamaClient {
   session: Session | null = null;
   socket: Socket | null = null;
 
+  
   constructor() {
     this.client = new Client(SERVER_KEY, HOST, PORT, USE_SSL);
   }
