@@ -1,0 +1,11 @@
+{
+  "name": "tictactoe-nakama",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('build',{recursive:true});fs.copyFileSync('modules/main.js','build/index.js');\""
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.0.0"
+  }
+}
