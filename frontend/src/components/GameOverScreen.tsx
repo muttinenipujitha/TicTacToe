@@ -70,7 +70,6 @@ export function GameOverScreen({
           {!iWon && !iDraw && "Better luck next time"}
           {iDraw && "Nobody wins, nobody loses"}
         </p>
-
         {/* ✅ LEADERBOARD */}
         {leaderboard.length > 0 && (
           <div className="leaderboard">
