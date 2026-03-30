@@ -1,8 +1,5 @@
 # Multiplayer Tic-Tac-Toe — LILA Assignment
 
-Live demo: `<your-frontend-url>`  
-Nakama server: `<your-nakama-railway-url>`
-
 ---
 
 ## Tech Stack
