@@ -4,5 +4,5 @@ COPY ./modules /nakama/data/modules
 
 CMD ["sh", "-c", "nakama \
   --name nakama1 \
-  --database.address $PGUSER:$PGPASSWORD@$PGHOST:$PGPORT/$PGDATABASE?sslmode=require \
+  --database.address $(echo $DATABASE_URL | sed 's/postgresql:\\/\\///') \
   --socket.port $PORT"]
